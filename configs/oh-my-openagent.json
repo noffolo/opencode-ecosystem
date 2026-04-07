@@ -1,0 +1,154 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/dev/assets/oh-my-opencode.schema.json",
+  "agents": {
+    "oracle": {
+      "model": "google/gemini-3.1-pro-preview",
+      "variant": "high"
+    },
+    "explore": {
+      "model": "ollama/qwen2.5-coder:7b"
+    },
+    "multimodal-looker": {
+      "model": "google/gemini-3.1-pro-preview"
+    },
+    "prometheus": {
+      "model": "opencode/qwen3.6-plus-free",
+      "fallback_models": ["google/gemini-3.1-pro-preview"]
+    },
+    "metis": {
+      "model": "ollama/mistral-nemo:12b"
+    },
+    "momus": {
+      "model": "opencode/qwen3.6-plus-free",
+      "fallback_models": ["google/gemini-3.1-pro-preview"],
+      "variant": "high"
+    },
+    "atlas": {
+      "model": "ollama/qwen2.5-coder:7b"
+    },
+    "sisyphus-junior": {
+      "model": "ollama/qwen2.5-coder:7b"
+    },
+    "sisyphus": {
+      "model": "google/gemini-3.1-pro-preview",
+      "fallback_models": [
+        "ollama/qwen2.5-coder:7b"
+      ]
+    },
+    "librarian": {
+      "model": "ollama/mistral-nemo:12b"
+    },
+    "hephaestus": {
+      "model": "ollama/qwen2.5-coder:7b",
+      "fallback_models": [
+        "google/gemini-3.1-pro-preview"
+      ],
+      "options": {
+        "stop": [
+          "<|endoftext|>",
+          "<|im_end|>",
+          "}"
+        ],
+        "format": "json",
+        "temperature": 0.2
+      }
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "ollama/gemma4:e4b",
+      "variant": "high",
+      "description": "Frontend e UI/UX"
+    },
+    "ultrabrain": {
+      "model": "opencode/qwen3.6-plus-free",
+      "fallback_models": ["google/gemini-3.1-pro-preview"],
+      "variant": "high"
+    },
+    "deep": {
+      "model": "google/gemini-3.1-pro-preview",
+      "variant": "high",
+      "description": "Ricerca profonda e debugging complesso"
+    },
+    "artistry": {
+      "model": "ollama/gemma4:e4b",
+      "variant": "high"
+    },
+    "quick": {
+      "model": "ollama/qwen2.5-coder:3b",
+      "description": "Task banali: typo, modifiche file singolo"
+    },
+    "unspecified-low": {
+      "model": "ollama/mistral-nemo:12b",
+      "description": "Task generici a basso sforzo"
+    },
+    "unspecified-high": {
+      "model": "ollama/qwen2.5-coder:7b",
+      "description": "Task complessi: refactoring multi-file"
+    },
+    "writing": {
+      "model": "ollama/mistral-nemo:12b",
+      "description": "Documentazione e README"
+    }
+  },
+  "background_task": {
+    "defaultConcurrency": 3,
+    "providerConcurrency": {
+      "ollama": 2,
+      "google": 1
+    },
+    "modelConcurrency": {
+      "google/gemini-3.1-pro-preview": 1,
+      "ollama/qwen2.5-coder:7b": 2,
+      "ollama/mistral-nemo:12b": 1,
+      "ollama/deepseek-r1:14b": 1
+    }
+  },
+  "sisyphus_agent": {
+    "disabled": false,
+    "default_builder_enabled": false,
+    "planner_enabled": true,
+    "replace_plan": true
+  },
+  "skills": {
+    "sources": [
+      {
+        "path": "${HOME}/.config/opencode/skill",
+        "recursive": true
+      }
+    ],
+    "archive": {
+      "index": "${HOME}/opencode-ecosystem/skills/.archive-index.json",
+      "activate_script": "${HOME}/opencode-ecosystem/skills/activate-skill",
+      "deactivate_script": "${HOME}/opencode-ecosystem/skills/deactivate-skill"
+    }
+  },
+  "mcp": {
+    "codemem": {
+      "command": [
+        "node",
+        "${HOME}/opencode-ecosystem/codemem/packages/mcp-server/dist/index.js"
+      ],
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "description": "CodeMEM - AST-guided long-term memory"
+    }
+  },
+  "experimental": {
+    "aggressive_truncation": true,
+    "task_system": true,
+    "truncate_all_tool_outputs": false
+  },
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "file": "${HOME}/opencode-ecosystem/oh-my-openagent/logs/orchestrator.log",
+    "max_size_mb": 50,
+    "max_backups": 5,
+    "format": "json"
+  },
+  "disabled_hooks": [
+    "startup-toast"
+  ]
+}

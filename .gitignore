@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.log
+dist/
+.DS_Store
+memory/raw/*.log
+CodeMEM.sqlite
+.sisyphus/
+.omo/locks/
