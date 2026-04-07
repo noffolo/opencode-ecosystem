@@ -1,4 +1,4 @@
-# OpenCode Ecosystem "War Machine" 🤖
+# An OpenCode Ecosystem 🤖
 
 Welcome to the advanced OpenCode ecosystem. This *dotfiles*-style repository transforms a vanilla OpenCode installation into a robust multi-agent architecture, equipped with long-term memory (CodeMEM), hundreds of active skills, cross-platform OOM (Out-of-Memory) guards, and autonomous pre-commit linters (QA-Gate).
 
