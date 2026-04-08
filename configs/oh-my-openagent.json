@@ -6,7 +6,7 @@
       "variant": "high"
     },
     "explore": {
-      "model": "ollama/qwen2.5-coder:7b"
+      "model": "ollama/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M"
     },
     "multimodal-looker": {
       "model": "google/gemini-3.1-pro-preview"
@@ -24,22 +24,22 @@
       "variant": "high"
     },
     "atlas": {
-      "model": "ollama/qwen2.5-coder:7b"
+      "model": "ollama/qwen3.5:9b"
     },
     "sisyphus-junior": {
-      "model": "ollama/qwen2.5-coder:7b"
+      "model": "ollama/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M"
     },
     "sisyphus": {
       "model": "google/gemini-3.1-pro-preview",
       "fallback_models": [
-        "ollama/qwen2.5-coder:7b"
+        "ollama/qwen3.5:9b"
       ]
     },
     "librarian": {
       "model": "ollama/mistral-nemo:12b"
     },
     "hephaestus": {
-      "model": "ollama/qwen2.5-coder:7b",
+      "model": "ollama/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ],
@@ -83,7 +83,7 @@
       "description": "Task generici a basso sforzo"
     },
     "unspecified-high": {
-      "model": "ollama/qwen2.5-coder:7b",
+      "model": "ollama/qwen3.5:9b",
       "description": "Task complessi: refactoring multi-file"
     },
     "writing": {
@@ -99,7 +99,8 @@
     },
     "modelConcurrency": {
       "google/gemini-3.1-pro-preview": 1,
-      "ollama/qwen2.5-coder:7b": 2,
+      "ollama/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M": 1,
+      "ollama/qwen3.5:9b": 1,
       "ollama/mistral-nemo:12b": 1,
       "ollama/deepseek-r1:14b": 1
     }
