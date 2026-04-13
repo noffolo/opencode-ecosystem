@@ -7,7 +7,7 @@
       "fallback_models": []
     },
     "explore": {
-      "model": "lmstudio/qwen3.5-9b-sushi-coder-rl",
+      "model": "ollama/qwen3.5-9b-sushi-coder:latest",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ]
@@ -23,7 +23,7 @@
       ]
     },
     "metis": {
-      "model": "lmstudio/mistralai/mistral-nemo-instruct-2407",
+      "model": "ollama/mistral-nemo:12b",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ]
@@ -36,13 +36,13 @@
       "variant": "high"
     },
     "atlas": {
-      "model": "lmstudio/qwen/qwen3.5-9b",
+      "model": "ollama/qwen3.5:9b",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ]
     },
     "sisyphus-junior": {
-      "model": "lmstudio/qwen3.5-9b-sushi-coder-rl",
+      "model": "ollama/qwen3.5-9b-sushi-coder:latest",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ]
@@ -50,17 +50,17 @@
     "sisyphus": {
       "model": "google/gemini-3.1-pro-preview",
       "fallback_models": [
-        "lmstudio/qwen/qwen3.5-9b"
+        "ollama/qwen3.5:9b"
       ]
     },
     "librarian": {
-      "model": "lmstudio/mistralai/mistral-nemo-instruct-2407",
+      "model": "ollama/mistral-nemo:12b",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ]
     },
     "hephaestus": {
-      "model": "lmstudio/qwen3.5-9b-sushi-coder-rl",
+      "model": "ollama/qwen3.5-9b-sushi-coder:latest",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ],
@@ -77,7 +77,7 @@
   },
   "categories": {
     "visual-engineering": {
-      "model": "lmstudio/google/gemma-4-e2b",
+      "model": "ollama/gemma4:e4b",
       "variant": "high",
       "description": "Frontend e UI/UX",
       "fallback_models": [
@@ -98,35 +98,35 @@
       "fallback_models": []
     },
     "artistry": {
-      "model": "lmstudio/google/gemma-4-e2b",
+      "model": "ollama/gemma4:e4b",
       "variant": "high",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ]
     },
     "quick": {
-      "model": "lmstudio/qwen3.5-9b-sushi-coder-rl",
+      "model": "ollama/qwen3.5-9b-sushi-coder:latest",
       "description": "Task banali: typo, modifiche file singolo",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ]
     },
     "unspecified-low": {
-      "model": "lmstudio/mistralai/mistral-nemo-instruct-2407",
+      "model": "ollama/mistral-nemo:12b",
       "description": "Task generici a basso sforzo",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ]
     },
     "unspecified-high": {
-      "model": "lmstudio/qwen/qwen3.5-9b",
+      "model": "ollama/qwen3.5:9b",
       "description": "Task complessi: refactoring multi-file",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ]
     },
     "writing": {
-      "model": "lmstudio/mistralai/mistral-nemo-instruct-2407",
+      "model": "ollama/mistral-nemo:12b",
       "description": "Documentazione e README",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
@@ -136,15 +136,15 @@
   "background_task": {
     "defaultConcurrency": 4,
     "providerConcurrency": {
-      "lmstudio": 2,
+      "ollama": 2,
       "google": 2
     },
     "modelConcurrency": {
       "google/gemini-3.1-pro-preview": 1,
-      "lmstudio/qwen3.5-9b-sushi-coder-rl": 1,
-      "lmstudio/qwen/qwen3.5-9b": 1,
-      "lmstudio/mistralai/mistral-nemo-instruct-2407": 1,
-      "lmstudio/google/gemma-4-e2b": 1
+      "ollama/qwen3.5-9b-sushi-coder:latest": 1,
+      "ollama/qwen3.5:9b": 1,
+      "ollama/mistral-nemo:12b": 1,
+      "ollama/gemma4:e4b": 1
     }
   },
   "sisyphus_agent": {
