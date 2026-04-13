@@ -18,6 +18,7 @@
     }
   },
   "plugin": [
-    "${HOME}/.config/opencode/plugins/oh-my-openagent"
+    "${HOME}/.config/opencode/plugins/oh-my-openagent",
+    "${HOME}/opencode-ecosystem/plugins/lmstudio-guard"
   ]
 }

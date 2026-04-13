@@ -6,7 +6,7 @@
       "variant": "high"
     },
     "explore": {
-      "model": "ollama/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M"
+      "model": "lmstudio/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M"
     },
     "multimodal-looker": {
       "model": "google/gemini-3.1-pro-preview"
@@ -16,7 +16,7 @@
       "fallback_models": ["google/gemini-3.1-pro-preview"]
     },
     "metis": {
-      "model": "ollama/mistral-nemo:12b"
+      "model": "lmstudio/mistral-nemo:12b"
     },
     "momus": {
       "model": "opencode/qwen3.6-plus-free",
@@ -24,22 +24,22 @@
       "variant": "high"
     },
     "atlas": {
-      "model": "ollama/qwen3.5:9b"
+      "model": "lmstudio/qwen3.5:9b"
     },
     "sisyphus-junior": {
-      "model": "ollama/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M"
+      "model": "lmstudio/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M"
     },
     "sisyphus": {
       "model": "google/gemini-3.1-pro-preview",
       "fallback_models": [
-        "ollama/qwen3.5:9b"
+        "lmstudio/qwen3.5:9b"
       ]
     },
     "librarian": {
-      "model": "ollama/mistral-nemo:12b"
+      "model": "lmstudio/mistral-nemo:12b"
     },
     "hephaestus": {
-      "model": "ollama/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M",
+      "model": "lmstudio/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M",
       "fallback_models": [
         "google/gemini-3.1-pro-preview"
       ],
@@ -56,7 +56,7 @@
   },
   "categories": {
     "visual-engineering": {
-      "model": "ollama/gemma4:e4b",
+      "model": "lmstudio/gemma4:e4b",
       "variant": "high",
       "description": "Frontend e UI/UX"
     },
@@ -71,38 +71,38 @@
       "description": "Ricerca profonda e debugging complesso"
     },
     "artistry": {
-      "model": "ollama/gemma4:e4b",
+      "model": "lmstudio/gemma4:e4b",
       "variant": "high"
     },
     "quick": {
-      "model": "ollama/qwen2.5-coder:3b",
+      "model": "lmstudio/qwen2.5-coder:3b",
       "description": "Task banali: typo, modifiche file singolo"
     },
     "unspecified-low": {
-      "model": "ollama/mistral-nemo:12b",
+      "model": "lmstudio/mistral-nemo:12b",
       "description": "Task generici a basso sforzo"
     },
     "unspecified-high": {
-      "model": "ollama/qwen3.5:9b",
+      "model": "lmstudio/qwen3.5:9b",
       "description": "Task complessi: refactoring multi-file"
     },
     "writing": {
-      "model": "ollama/mistral-nemo:12b",
+      "model": "lmstudio/mistral-nemo:12b",
       "description": "Documentazione e README"
     }
   },
   "background_task": {
     "defaultConcurrency": 3,
     "providerConcurrency": {
-      "ollama": 2,
+      "lmstudio": 2,
       "google": 1
     },
     "modelConcurrency": {
       "google/gemini-3.1-pro-preview": 1,
-      "ollama/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M": 1,
-      "ollama/qwen3.5:9b": 1,
-      "ollama/mistral-nemo:12b": 1,
-      "ollama/deepseek-r1:14b": 1
+      "lmstudio/hf.co/bigatuna/Qwen3.5-9b-Sushi-Coder-RL-GGUF:Q4_K_M": 1,
+      "lmstudio/qwen3.5:9b": 1,
+      "lmstudio/mistral-nemo:12b": 1,
+      "lmstudio/deepseek-r1:14b": 1
     }
   },
   "sisyphus_agent": {
