@@ -1,0 +1,26 @@
+#!/bin/bash
+# deactivate-skill <nome> — sposta una skill da active ad archivio
+
+SKILL_NAME="${1}"
+ACTIVE_DIR="$HOME/.config/opencode/skill"
+ARCHIVE_DIR="$HOME/opencode-ecosystem/skills/archive"
+
+if [ -z "$SKILL_NAME" ]; then
+    echo "uso: deactivate-skill <nome-skill>"
+    echo ""
+    echo "skills attualmente attive:"
+    ls "$ACTIVE_DIR" | grep -v '^\.' | sed 's/^/  /'
+    exit 1
+fi
+
+if [ ! -d "$ACTIVE_DIR/$SKILL_NAME" ]; then
+    echo "errore: $SKILL_NAME non e attiva"
+    exit 1
+fi
+
+if [ -d "$ARCHIVE_DIR/$SKILL_NAME" ]; then
+    rm -rf "$ARCHIVE_DIR/$SKILL_NAME"
+fi
+
+mv "$ACTIVE_DIR/$SKILL_NAME" "$ARCHIVE_DIR/$SKILL_NAME"
+echo "$SKILL_NAME disattivata e spostata in archivio"

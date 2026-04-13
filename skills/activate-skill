@@ -1,0 +1,31 @@
+#!/bin/bash
+# activate-skill <nome> — sposta una skill dall'archivio alla cartella active
+# Uso: activate-skill farmage-typescript-pro
+
+SKILL_NAME="${1}"
+ACTIVE_DIR="$HOME/.config/opencode/skill"
+ARCHIVE_DIR="$HOME/opencode-ecosystem/skills/archive"
+
+if [ -z "$SKILL_NAME" ]; then
+    echo "uso: activate-skill <nome-skill>"
+    echo ""
+    echo "skills disponibili in archivio:"
+    ls "$ARCHIVE_DIR" 2>/dev/null | sed 's/^/  /'
+    exit 1
+fi
+
+if [ -d "$ACTIVE_DIR/$SKILL_NAME" ]; then
+    echo "$SKILL_NAME e gia attiva"
+    exit 0
+fi
+
+if [ ! -d "$ARCHIVE_DIR/$SKILL_NAME" ]; then
+    echo "errore: $SKILL_NAME non trovata in archivio"
+    echo ""
+    echo "skills simili disponibili:"
+    ls "$ARCHIVE_DIR" | grep -i "$SKILL_NAME" | sed 's/^/  /' || echo "  (nessuna)"
+    exit 1
+fi
+
+cp -r "$ARCHIVE_DIR/$SKILL_NAME" "$ACTIVE_DIR/$SKILL_NAME"
+echo "$SKILL_NAME attivata"
