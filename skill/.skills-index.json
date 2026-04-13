@@ -1,0 +1,654 @@
+{
+  "total": 79,
+  "categories": {
+    "Aleph Knowledge Graph": 5,
+    "Workflow & RAM Management": 9,
+    "Scraper & Data Engineering": 5,
+    "Core/Tooling": 10,
+    "Dev Workflow (Code Forge)": 12,
+    "Dev & DevOps": 4,
+    "Language/Domain Expert": 24,
+    "Spec Generation": 10
+  },
+  "skills": [
+    {
+      "name": "aleph-node-architect",
+      "description": "Analyze input to identify central entities, suggest graph placement (parent/related nodes), check CodeMEM for duplicates.",
+      "triggers": "nuovo nodo, struttura aleph, collega pensiero, mappa concettuale, knowledge graph, entity node",
+      "category": "Aleph Knowledge Graph",
+      "path": "~/.config/opencode/skill/aleph-node-architect",
+      "line_count": 32
+    },
+    {
+      "name": "architect-brainstorm",
+      "description": "Compare 3 architectural alternatives (Lean, Scalable, Experimental) with RAM impact analysis for Mac M2. Use when choosing between technologies or restructuring complex modules.",
+      "triggers": "analizza architettura, scelta tech, refactoring pesante, architecture decision, tech comparison",
+      "category": "Workflow & RAM Management",
+      "path": "~/.config/opencode/skill/architect-brainstorm",
+      "line_count": 34
+    },
+    {
+      "name": "async-throttle-controller",
+      "description": "Manage async concurrency with asyncio.Semaphore, optimize for Mac M2 Pro (15 concurrent tasks), exponential backoff on 503/429.",
+      "triggers": "velocizza scraper, troppe connessioni, limita task, async concurrency, semaphore, rate limit, backoff",
+      "category": "Scraper & Data Engineering",
+      "path": "~/.config/opencode/skill/async-throttle-controller",
+      "line_count": 33
+    },
+    {
+      "name": "atomic-thought-distiller",
+      "description": "Reduce complex texts to atomic knowledge units (max 280 chars) with 3-5 hierarchical tags, formatted for vector DB injection.",
+      "triggers": "riassumi per aleph, sintesi atomica, nota breve, distill knowledge, atomic note, summarize",
+      "category": "Aleph Knowledge Graph",
+      "path": "~/.config/opencode/skill/atomic-thought-distiller",
+      "line_count": 39
+    },
+    {
+      "name": "browser-fingerprint-emul",
+      "description": "Mask navigator.webdriver, falsify hardware params (CPU cores, RAM, screen resolution), disable WebGL fingerprinting in Playwright.",
+      "triggers": "bypass bot detection, headless check, stealth mode, fingerprint, webdriver mask, anti-detect",
+      "category": "Scraper & Data Engineering",
+      "path": "~/.config/opencode/skill/browser-fingerprint-emul",
+      "line_count": 34
+    },
+    {
+      "name": "cloud-solution-architect",
+      "description": "Transform the agent into a Cloud Solution Architect following Azure Architecture Center best practices. Use when designing cloud architectures, reviewing system designs, selecting architecture styles,",
+      "triggers": "cloud solution architect",
+      "category": "Core/Tooling",
+      "path": "~/.config/opencode/skill/cloud-solution-architect",
+      "line_count": 317
+    },
+    {
+      "name": "code-forge-debug",
+      "description": "Use when encountering any bug, test failure, or unexpected behavior — enforces root cause investigation before fixes. Prevents symptom-fixing, masking bugs, and \"just try this\" approaches. For code-fo",
+      "triggers": "code forge debug",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-debug",
+      "line_count": 127
+    },
+    {
+      "name": "code-forge-finish",
+      "description": "Use when implementation is complete and you need to merge, create a PR, or clean up — verifies tests pass, presents 4 structured integration options, executes chosen workflow, and cleans up worktrees.",
+      "triggers": "code forge finish",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-finish",
+      "line_count": 167
+    },
+    {
+      "name": "code-forge-fix",
+      "description": "Debug and fix bugs with interactive upstream trace-back — diagnoses root cause level, confirms upstream document updates, and applies TDD fixes. Supports --repos flag for parallel bug fixing across mu",
+      "triggers": "code forge fix",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-fix",
+      "line_count": 435
+    },
+    {
+      "name": "code-forge-impl",
+      "description": "Execute pending tasks for a feature — TDD-driven implementation with sub-agent isolation and progress tracking. Use when starting to build, implement, or code a planned feature, resuming partially com",
+      "triggers": "code forge impl",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-impl",
+      "line_count": 223
+    },
+    {
+      "name": "code-forge-parallel",
+      "description": "Use when facing 2+ independent problems that can be solved concurrently — dispatches one sub-agent per problem domain for parallel investigation and fixing. For parallel task execution within a featur",
+      "triggers": "code forge parallel",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-parallel",
+      "line_count": 125
+    },
+    {
+      "name": "code-forge-plan",
+      "description": "Analyze documentation (or a prompt) and generate an implementation plan with task breakdown, TDD steps, and progress tracking. Use when breaking down a feature, creating tasks from docs or requirement",
+      "triggers": "code forge plan",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-plan",
+      "line_count": 672
+    },
+    {
+      "name": "code-forge-port",
+      "description": "Port a documentation-driven project to a new target language — initializes project skeleton, analyzes reference implementation, and batch-generates plans for selected features. Use when converting a p",
+      "triggers": "code forge port",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-port",
+      "line_count": 537
+    },
+    {
+      "name": "code-forge-review",
+      "description": "Use when reviewing code, handling review feedback, or posting a review to a GitHub PR — 14-dimension quality analysis for features or entire projects (generate mode), structured evaluation and respons",
+      "triggers": "code forge review",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-review",
+      "line_count": 482
+    },
+    {
+      "name": "code-forge-status",
+      "description": "Display code-forge feature dashboard with task-level progress from state.json, or show detailed status for a specific feature. Use when checking progress, asking \"what's left\", viewing task completion",
+      "triggers": "code forge status",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-status",
+      "line_count": 141
+    },
+    {
+      "name": "code-forge-tdd",
+      "description": "Use when implementing any feature or fix outside code-forge workflow — enforces Red-Green-Refactor cycle with mandatory test-first discipline. Supports three modes: (1) Standalone — ad-hoc TDD for qui",
+      "triggers": "code forge tdd",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-tdd",
+      "line_count": 321
+    },
+    {
+      "name": "code-forge-verify",
+      "description": "Use before claiming work is done, fixed, or passing — requires running verification commands and confirming output before any success claim. Prevents false completion claims, unverified assertions, an",
+      "triggers": "code forge verify",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-verify",
+      "line_count": 102
+    },
+    {
+      "name": "code-forge-worktree",
+      "description": "Use when starting feature work that needs workspace isolation — creates git worktree with automatic project setup and baseline test verification. Ensures worktree directory is git-ignored and safe. In",
+      "triggers": "code forge worktree",
+      "category": "Dev Workflow (Code Forge)",
+      "path": "~/.config/opencode/skill/code-forge-worktree",
+      "line_count": 142
+    },
+    {
+      "name": "codemem-integrity-check",
+      "description": "Verify CodeMEM MCP server connectivity, attempt auto-restart on failure, run test query to validate index readability.",
+      "triggers": "codemem rotto, check memoria, mcp error, memory check, integrity check, MCP server",
+      "category": "Workflow & RAM Management",
+      "path": "~/.config/opencode/skill/codemem-integrity-check",
+      "line_count": 36
+    },
+    {
+      "name": "context-compressor",
+      "description": "Analyze open files and create a CONTEXT_MAP.md with main exports, env vars, and feature state to save tokens and RAM.",
+      "triggers": "riassumi progetto, pulisci contesto, troppo codice, context map, compress context, save tokens",
+      "category": "Workflow & RAM Management",
+      "path": "~/.config/opencode/skill/context-compressor",
+      "line_count": 30
+    },
+    {
+      "name": "context-garbage-collector",
+      "description": "Unload inactive Ollama models, suggest Python gc.collect(), warn when free RAM drops below 2GB safety threshold.",
+      "triggers": "pulisci ram, ollama lento, free memory, garbage collect, memory cleanup, unload model",
+      "category": "Workflow & RAM Management",
+      "path": "~/.config/opencode/skill/context-garbage-collector",
+      "line_count": 38
+    },
+    {
+      "name": "continual-learning",
+      "description": "Guide for implementing continual learning in AI coding agents — hooks, memory scoping, reflection patterns. Use when setting up learning infrastructure for agents.",
+      "triggers": "continual learning",
+      "category": "Core/Tooling",
+      "path": "~/.config/opencode/skill/continual-learning",
+      "line_count": 79
+    },
+    {
+      "name": "copilot-sdk",
+      "description": "Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating programmatic integrations with Copilot across Node.js/TypeScript, Python, Go, or .NET. Covers session management, ",
+      "triggers": "copilot sdk",
+      "category": "Core/Tooling",
+      "path": "~/.config/opencode/skill/copilot-sdk",
+      "line_count": 904
+    },
+    {
+      "name": "docstring-auto-sync",
+      "description": "Analyze Python functions and generate Google Style docstrings, update README with params and usage examples.",
+      "triggers": "documenta, spiega codice, readme, docstring, document code, auto-doc",
+      "category": "Dev & DevOps",
+      "path": "~/.config/opencode/skill/docstring-auto-sync",
+      "line_count": 45
+    },
+    {
+      "name": "entra-agent-id",
+      "description": "|",
+      "triggers": "entra agent id",
+      "category": "Core/Tooling",
+      "path": "~/.config/opencode/skill/entra-agent-id",
+      "line_count": 250
+    },
+    {
+      "name": "farmage-angular-architect",
+      "description": "Generates Angular 17+ standalone components, configures advanced routing with lazy loading and guards, implements NgRx state management, applies RxJS patterns, and optimizes bundle performance. Use wh",
+      "triggers": "farmage angular architect",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-angular-architect",
+      "line_count": 153
+    },
+    {
+      "name": "farmage-api-designer",
+      "description": "Use when designing REST or GraphQL APIs, creating OpenAPI specifications, or planning API architecture. Invoke for resource modeling, versioning strategies, pagination patterns, error handling standar",
+      "triggers": "farmage api designer",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-api-designer",
+      "line_count": 218
+    },
+    {
+      "name": "farmage-cli-developer",
+      "description": "Use when building CLI tools, implementing argument parsing, or adding interactive prompts. Invoke for parsing flags and subcommands, displaying progress bars and spinners, generating bash/zsh/fish com",
+      "triggers": "farmage cli developer",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-cli-developer",
+      "line_count": 114
+    },
+    {
+      "name": "farmage-code-documenter",
+      "description": "Generates, formats, and validates technical documentation — including docstrings, OpenAPI/Swagger specs, JSDoc annotations, doc portals, and user guides. Use when adding docstrings to functions or cla",
+      "triggers": "farmage code documenter",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-code-documenter",
+      "line_count": 148
+    },
+    {
+      "name": "farmage-database-optimizer",
+      "description": "Optimizes database queries and improves performance across PostgreSQL and MySQL systems. Use when investigating slow queries, analyzing execution plans, or optimizing database performance. Invoke for ",
+      "triggers": "farmage database optimizer",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-database-optimizer",
+      "line_count": 148
+    },
+    {
+      "name": "farmage-debugging-wizard",
+      "description": "Parses error messages, traces execution flow through stack traces, correlates log entries to identify failure points, and applies systematic hypothesis-driven methodology to isolate and resolve bugs. ",
+      "triggers": "farmage debugging wizard",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-debugging-wizard",
+      "line_count": 106
+    },
+    {
+      "name": "farmage-devops-engineer",
+      "description": "Creates Dockerfiles, configures CI/CD pipelines, writes Kubernetes manifests, and generates Terraform/Pulumi infrastructure templates. Handles deployment automation, GitOps configuration, incident res",
+      "triggers": "farmage devops engineer",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-devops-engineer",
+      "line_count": 145
+    },
+    {
+      "name": "farmage-embedded-systems",
+      "description": "Use when developing firmware for microcontrollers, implementing RTOS applications, or optimizing power consumption. Invoke for STM32, ESP32, FreeRTOS, bare-metal, power optimization, real-time systems",
+      "triggers": "farmage embedded systems",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-embedded-systems",
+      "line_count": 168
+    },
+    {
+      "name": "farmage-fastapi-expert",
+      "description": "Use when building high-performance async Python APIs with FastAPI and Pydantic V2. Invoke to create REST endpoints, define Pydantic models, implement authentication flows, set up async SQLAlchemy data",
+      "triggers": "farmage fastapi expert",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-fastapi-expert",
+      "line_count": 186
+    },
+    {
+      "name": "farmage-fullstack-guardian",
+      "description": "Builds security-focused full-stack web applications by implementing integrated frontend and backend components with layered security at every level. Covers the complete stack from database to UI, enfo",
+      "triggers": "farmage fullstack guardian",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-fullstack-guardian",
+      "line_count": 106
+    },
+    {
+      "name": "farmage-golang-pro",
+      "description": "Implements concurrent Go patterns using goroutines and channels, designs and builds microservices with gRPC or REST, optimizes Go application performance with pprof, and enforces idiomatic Go with gen",
+      "triggers": "farmage golang pro",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-golang-pro",
+      "line_count": 123
+    },
+    {
+      "name": "farmage-kotlin-specialist",
+      "description": "Provides idiomatic Kotlin implementation patterns including coroutine concurrency, Flow stream handling, multiplatform architecture, Compose UI construction, Ktor server setup, and type-safe DSL desig",
+      "triggers": "farmage kotlin specialist",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-kotlin-specialist",
+      "line_count": 148
+    },
+    {
+      "name": "farmage-legacy-modernizer",
+      "description": "Designs incremental migration strategies, identifies service boundaries, produces dependency maps and migration roadmaps, and generates API facade designs for aging codebases. Use when modernizing leg",
+      "triggers": "farmage legacy modernizer",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-legacy-modernizer",
+      "line_count": 138
+    },
+    {
+      "name": "farmage-microservices-architect",
+      "description": "Designs distributed system architectures, decomposes monoliths into bounded-context services, recommends communication patterns, and produces service boundary diagrams and resilience strategies. Use w",
+      "triggers": "farmage microservices architect",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-microservices-architect",
+      "line_count": 165
+    },
+    {
+      "name": "farmage-monitoring-expert",
+      "description": "Configures monitoring systems, implements structured logging pipelines, creates Prometheus/Grafana dashboards, defines alerting rules, and instruments distributed tracing. Implements Prometheus/Grafan",
+      "triggers": "farmage monitoring expert",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-monitoring-expert",
+      "line_count": 177
+    },
+    {
+      "name": "farmage-nextjs-developer",
+      "description": "Use when building Next.js 14+ applications with App Router, server components, or server actions. Invoke to configure route handlers, implement middleware, set up API routes, add streaming SSR, write ",
+      "triggers": "farmage nextjs developer",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-nextjs-developer",
+      "line_count": 144
+    },
+    {
+      "name": "farmage-prompt-engineer",
+      "description": "Writes, refactors, and evaluates prompts for LLMs — generating optimized prompt templates, structured output schemas, evaluation rubrics, and test suites. Use when designing prompts for new LLM applic",
+      "triggers": "farmage prompt engineer",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-prompt-engineer",
+      "line_count": 134
+    },
+    {
+      "name": "farmage-rust-engineer",
+      "description": "Writes, reviews, and debugs idiomatic Rust code with memory safety and zero-cost abstractions. Implements ownership patterns, manages lifetimes, designs trait hierarchies, builds async applications wi",
+      "triggers": "farmage rust engineer",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-rust-engineer",
+      "line_count": 168
+    },
+    {
+      "name": "farmage-spark-engineer",
+      "description": "Use when writing Spark jobs, debugging performance issues, or configuring cluster settings for Apache Spark applications, distributed data processing pipelines, or big data workloads. Invoke to write ",
+      "triggers": "farmage spark engineer",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-spark-engineer",
+      "line_count": 149
+    },
+    {
+      "name": "farmage-spec-miner",
+      "description": "Reverse-engineering specialist that extracts specifications from existing codebases. Use when working with legacy or undocumented systems, inherited projects, or old codebases with no documentation. I",
+      "triggers": "farmage spec miner",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-spec-miner",
+      "line_count": 109
+    },
+    {
+      "name": "farmage-sre-engineer",
+      "description": "Defines service level objectives, creates error budget policies, designs incident response procedures, develops capacity models, and produces monitoring configurations and automation scripts for produ",
+      "triggers": "farmage sre engineer",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-sre-engineer",
+      "line_count": 182
+    },
+    {
+      "name": "farmage-swift-expert",
+      "description": "Builds iOS/macOS/watchOS/tvOS applications, implements SwiftUI views and state management, designs protocol-oriented architectures, handles async/await concurrency, implements actors for thread safety",
+      "triggers": "farmage swift expert",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-swift-expert",
+      "line_count": 164
+    },
+    {
+      "name": "farmage-typescript-pro",
+      "description": "Implements advanced TypeScript type systems, creates custom type guards, utility types, and branded types, and configures tRPC for end-to-end type safety. Use when building TypeScript applications req",
+      "triggers": "farmage typescript pro",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-typescript-pro",
+      "line_count": 146
+    },
+    {
+      "name": "farmage-vue-expert-js",
+      "description": "Creates Vue 3 components, builds vanilla JS composables, configures Vite projects, and sets up routing and state management using JavaScript only — no TypeScript. Generates JSDoc-typed code with @type",
+      "triggers": "farmage vue expert js",
+      "category": "Language/Domain Expert",
+      "path": "~/.config/opencode/skill/farmage-vue-expert-js",
+      "line_count": 168
+    },
+    {
+      "name": "frontend-design-review",
+      "description": "Review and create distinctive, production-grade frontend interfaces with high design quality and design system compliance. Evaluates using three pillars: frictionless insight-to-action, quality craft,",
+      "triggers": "frontend design review",
+      "category": "Core/Tooling",
+      "path": "~/.config/opencode/skill/frontend-design-review",
+      "line_count": 138
+    },
+    {
+      "name": "git-atomic-committer",
+      "description": "Split changes into logical commits following Conventional Commits standard with Context lines referencing task IDs.",
+      "triggers": "commit, pusha, finito task, git commit, salva lavoro, conventional commits, atomic commit, impatto aleph, impatto scraper",
+      "category": "Workflow & RAM Management",
+      "path": "~/.config/opencode/skill/git-atomic-committer",
+      "line_count": 48
+    },
+    {
+      "name": "github-issue-creator",
+      "description": "Convert raw notes, error logs, voice dictation, or screenshots into crisp GitHub-flavored markdown issue reports. Use when the user pastes bug info, error messages, or informal descriptions and wants ",
+      "triggers": "github issue creator",
+      "category": "Core/Tooling",
+      "path": "~/.config/opencode/skill/github-issue-creator",
+      "line_count": 136
+    },
+    {
+      "name": "graph-viz-mermaid",
+      "description": "Generate Mermaid.js graph TD visualizations of knowledge graphs with color-coded nodes for raw data vs synthesized nodes.",
+      "triggers": "mostra grafo, visualizza aleph, disegna mappa, mermaid, graph visualization, knowledge map",
+      "category": "Aleph Knowledge Graph",
+      "path": "~/.config/opencode/skill/graph-viz-mermaid",
+      "line_count": 36
+    },
+    {
+      "name": "knowledge-gap-finder",
+      "description": "Scan Aleph nodes to identify isolated silos and missing critical information, suggest new scraping/research tasks.",
+      "triggers": "cosa manca, analisi aleph, punti ciechi, knowledge gap, missing info, blind spots",
+      "category": "Aleph Knowledge Graph",
+      "path": "~/.config/opencode/skill/knowledge-gap-finder",
+      "line_count": 30
+    },
+    {
+      "name": "m2-docker-optimizer",
+      "description": "Create multi-stage Dockerfiles optimized for Apple Silicon arm64 with slim images, layer caching, and pyc suppression.",
+      "triggers": "dockerfile, build immagine, container, arm64, Apple Silicon, docker optimize, M2",
+      "category": "Dev & DevOps",
+      "path": "~/.config/opencode/skill/m2-docker-optimizer",
+      "line_count": 37
+    },
+    {
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate externa",
+      "triggers": "mcp builder",
+      "category": "Core/Tooling",
+      "path": "~/.config/opencode/skill/mcp-builder",
+      "line_count": 303
+    },
+    {
+      "name": "meta-skill-to-craft-skills",
+      "description": "Generates new skill files following a standardized schema. Analyzes user requests, creates .md files with title/ID/triggers/instructions, checks for duplicates, and saves to the skills directory.",
+      "triggers": "crea una nuova skill, aggiungi potere, nuova abilità, genera skill, create new skill, add capability",
+      "category": "Workflow & RAM Management",
+      "path": "~/.config/opencode/skill/meta-skill-to-craft-skills",
+      "line_count": 71
+    },
+    {
+      "name": "microsoft-docs",
+      "description": "Understand Microsoft technologies by querying official documentation. Use whenever the user asks how something works, wants tutorials, needs configuration options, limits, quotas, or best practices fo",
+      "triggers": "microsoft docs",
+      "category": "Core/Tooling",
+      "path": "~/.config/opencode/skill/microsoft-docs",
+      "line_count": 77
+    },
+    {
+      "name": "podcast-generation",
+      "description": "Generate AI-powered podcast-style audio narratives using Azure OpenAI",
+      "triggers": "podcast generation",
+      "category": "Core/Tooling",
+      "path": "~/.config/opencode/skill/podcast-generation",
+      "line_count": 121
+    },
+    {
+      "name": "poetry-lock-resolver",
+      "description": "Analyze Poetry dependency conflicts, identify version clashes (e.g. pydantic v1 vs v2), suggest exact fix commands.",
+      "triggers": "errore dipendenze, poetry lock, conflitto, dependency conflict, version mismatch, poetry install",
+      "category": "Dev & DevOps",
+      "path": "~/.config/opencode/skill/poetry-lock-resolver",
+      "line_count": 37
+    },
+    {
+      "name": "proxy-stealth-rotation",
+      "description": "Configure Playwright/httpx middleware with rotating headers, user-agent randomization, jitter delays, and auto-proxy switching on blocks.",
+      "triggers": "403 forbidden, captcha, evita ban, user-agent, proxy rotation, stealth mode, anti-bot",
+      "category": "Scraper & Data Engineering",
+      "path": "~/.config/opencode/skill/proxy-stealth-rotation",
+      "line_count": 34
+    },
+    {
+      "name": "py-selector-resilience",
+      "description": "Generate 3 fallback selector strategies (attribute-based, hierarchy-based, text-based) when CSS/XPath selectors fail during web scraping.",
+      "triggers": "selettore rotto, cambio DOM, fix scraper, estrazione fallita, selector broken, DOM changed",
+      "category": "Scraper & Data Engineering",
+      "path": "~/.config/opencode/skill/py-selector-resilience",
+      "line_count": 27
+    },
+    {
+      "name": "pydantic-data-validator",
+      "description": "Create Pydantic schemas for scraper output with string normalization, type conversion, and deduplication.",
+      "triggers": "valida output, schema dati, pulisci csv, formato json, pydantic, data validation, clean data",
+      "category": "Scraper & Data Engineering",
+      "path": "~/.config/opencode/skill/pydantic-data-validator",
+      "line_count": 32
+    },
+    {
+      "name": "pytest-mock-factory",
+      "description": "Generate pytest unit tests with mock HTTP responses for scraper edge cases (empty tags, 404, malformed HTML).",
+      "triggers": "scrivi test, mock http, unit test, pytest, test scraper, mock response",
+      "category": "Dev & DevOps",
+      "path": "~/.config/opencode/skill/pytest-mock-factory",
+      "line_count": 38
+    },
+    {
+      "name": "semantic-bridge-linker",
+      "description": "Find semantic connections between scraped data and existing Aleph nodes, generate link proposals with reasoning.",
+      "triggers": "trova connessioni, link semantico, cross-reference, connect nodes, semantic link, knowledge bridge",
+      "category": "Aleph Knowledge Graph",
+      "path": "~/.config/opencode/skill/semantic-bridge-linker",
+      "line_count": 35
+    },
+    {
+      "name": "skill-creator",
+      "description": "Guide for creating effective skills for AI coding agents working with Azure SDKs and Microsoft Foundry services. Use when creating new skills or updating existing skills.",
+      "triggers": "skill creator",
+      "category": "Core/Tooling",
+      "path": "~/.config/opencode/skill/skill-creator",
+      "line_count": 613
+    },
+    {
+      "name": "spec-forge-analyze",
+      "description": "Analyze a collection of documents to build a knowledge map, identify themes, find gaps, duplicates, conflicts, and staleness, then produce an organized analysis with improvement recommendations. Desig",
+      "triggers": "spec forge analyze",
+      "category": "Spec Generation",
+      "path": "~/.config/opencode/skill/spec-forge-analyze",
+      "line_count": 408
+    },
+    {
+      "name": "spec-forge-audit",
+      "description": "Audit existing project documentation for quality, completeness, consistency, and code alignment. Scans docs against the actual codebase to find stale references, missing coverage, internal contradicti",
+      "triggers": "spec forge audit",
+      "category": "Spec Generation",
+      "path": "~/.config/opencode/skill/spec-forge-audit",
+      "line_count": 285
+    },
+    {
+      "name": "spec-forge-decompose",
+      "description": "Lightweight project decomposition skill. Analyzes project scope through a brief interview and determines whether the project should be treated as a single feature or split into multiple sub-features. ",
+      "triggers": "spec forge decompose",
+      "category": "Spec Generation",
+      "path": "~/.config/opencode/skill/spec-forge-decompose",
+      "line_count": 211
+    },
+    {
+      "name": "spec-forge-idea",
+      "description": "Use when exploring a new idea before writing formal specifications. Guides users through iterative discovery, research, and critical analysis to crystallize vague ideas into validated requirement draf",
+      "triggers": "spec forge idea",
+      "category": "Spec Generation",
+      "path": "~/.config/opencode/skill/spec-forge-idea",
+      "line_count": 607
+    },
+    {
+      "name": "spec-forge-prd-generation",
+      "description": "Generates professional Product Requirements Documents (PRDs) following industry-standard methodologies. This skill activates when the user asks to write PRD, create a product requirements document, dr",
+      "triggers": "spec forge prd generation",
+      "category": "Spec Generation",
+      "path": "~/.config/opencode/skill/spec-forge-prd-generation",
+      "line_count": 157
+    },
+    {
+      "name": "spec-forge-review",
+      "description": "Review spec-forge generated documents (tech-design + feature specs) for quality, completeness, and internal consistency. Finds issues like incomplete sections, contradictions, missing traceability, an",
+      "triggers": "spec forge review",
+      "category": "Spec Generation",
+      "path": "~/.config/opencode/skill/spec-forge-review",
+      "line_count": 217
+    },
+    {
+      "name": "spec-forge-srs-generation",
+      "description": "Generates professional Software Requirements Specification (SRS) documents based on IEEE 830, ISO/IEC/IEEE 29148, and Amazon technical specification standards. This skill activates when the user needs",
+      "triggers": "spec forge srs generation",
+      "category": "Spec Generation",
+      "path": "~/.config/opencode/skill/spec-forge-srs-generation",
+      "line_count": 129
+    },
+    {
+      "name": "spec-forge-tech-design-generation",
+      "description": "Generates professional Technical Design Documents following industry-standard engineering practices. This skill activates when the user asks to write a technical design, create an architecture design,",
+      "triggers": "spec forge tech design generation",
+      "category": "Spec Generation",
+      "path": "~/.config/opencode/skill/spec-forge-tech-design-generation",
+      "line_count": 449
+    },
+    {
+      "name": "spec-forge-test-cases-generation",
+      "description": "Generates structured test case sets with multi-dimensional coverage from project code analysis or specification documents. This skill activates when the user asks to write test cases, generate tests, ",
+      "triggers": "spec forge test cases generation",
+      "category": "Spec Generation",
+      "path": "~/.config/opencode/skill/spec-forge-test-cases-generation",
+      "line_count": 418
+    },
+    {
+      "name": "spec-forge-test-plan-generation",
+      "description": "Generates professional Test Plan and Test Cases documents following IEEE 829 test documentation standards, ISTQB testing methodologies, and Google Testing Blog best practices. This skill activates whe",
+      "triggers": "spec forge test plan generation",
+      "category": "Spec Generation",
+      "path": "~/.config/opencode/skill/spec-forge-test-plan-generation",
+      "line_count": 248
+    },
+    {
+      "name": "token-compressor-logic",
+      "description": "Minify code by removing comments, blank lines, and non-essential docstrings for efficient LLM token usage.",
+      "triggers": "file troppo lungo, risparmia token, comprimi codice, minify, compress tokens, reduce context",
+      "category": "Workflow & RAM Management",
+      "path": "~/.config/opencode/skill/token-compressor-logic",
+      "line_count": 31
+    },
+    {
+      "name": "ui-fast-prototyper",
+      "description": "Rapid UI component generation with Tailwind CSS v4+, accessibility, responsive design, and dark mode support.",
+      "triggers": "crea componente, fai la pagina, stile tailwind, UI component, frontend, React component",
+      "category": "Workflow & RAM Management",
+      "path": "~/.config/opencode/skill/ui-fast-prototyper",
+      "line_count": 35
+    },
+    {
+      "name": "workaholic-auto-review",
+      "description": "Review last output for hallucinations and syntax errors, auto-correct issues, block release until internal coherence check passes.",
+      "triggers": "controlla bug, review, sicuro che va, auto review, quality check, verify output",
+      "category": "Workflow & RAM Management",
+      "path": "~/.config/opencode/skill/workaholic-auto-review",
+      "line_count": 41
+    }
+  ],
+  "lazy_loading_protocol": {
+    "scan_on_demand": true,
+    "load_only_when_triggered": true,
+    "unload_after_task": true,
+    "max_concurrent_skills": 3,
+    "archive_path": "${HOME}/opencode-ecosystem/skills/archive"
+  }
+}

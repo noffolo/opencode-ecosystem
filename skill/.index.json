@@ -1,0 +1,394 @@
+[
+  {
+    "name": "cloud-solution-architect",
+    "description": "Transform the agent into a Cloud Solution Architect following Azure Architecture Center best practices. Use when designing cloud architectures, reviewing system designs, selecting architecture styles,",
+    "triggers": "cloud solution architect",
+    "category": "Core/Tooling",
+    "path": "${HOME}/.config/opencode/skill/cloud-solution-architect"
+  },
+  {
+    "name": "code-forge-debug",
+    "description": "Use when encountering any bug, test failure, or unexpected behavior \u2014 enforces root cause investigation before fixes. Prevents symptom-fixing, masking bugs, and \"just try this\" approaches. For code-fo",
+    "triggers": "code forge debug",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-debug"
+  },
+  {
+    "name": "code-forge-finish",
+    "description": "Use when implementation is complete and you need to merge, create a PR, or clean up \u2014 verifies tests pass, presents 4 structured integration options, executes chosen workflow, and cleans up worktrees.",
+    "triggers": "code forge finish",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-finish"
+  },
+  {
+    "name": "code-forge-fix",
+    "description": "Debug and fix bugs with interactive upstream trace-back \u2014 diagnoses root cause level, confirms upstream document updates, and applies TDD fixes. Supports --repos flag for parallel bug fixing across mu",
+    "triggers": "code forge fix",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-fix"
+  },
+  {
+    "name": "code-forge-impl",
+    "description": "Execute pending tasks for a feature \u2014 TDD-driven implementation with sub-agent isolation and progress tracking. Use when starting to build, implement, or code a planned feature, resuming partially com",
+    "triggers": "code forge impl",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-impl"
+  },
+  {
+    "name": "code-forge-parallel",
+    "description": "Use when facing 2+ independent problems that can be solved concurrently \u2014 dispatches one sub-agent per problem domain for parallel investigation and fixing. For parallel task execution within a featur",
+    "triggers": "code forge parallel",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-parallel"
+  },
+  {
+    "name": "code-forge-plan",
+    "description": "Analyze documentation (or a prompt) and generate an implementation plan with task breakdown, TDD steps, and progress tracking. Use when breaking down a feature, creating tasks from docs or requirement",
+    "triggers": "code forge plan",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-plan"
+  },
+  {
+    "name": "code-forge-port",
+    "description": "Port a documentation-driven project to a new target language \u2014 initializes project skeleton, analyzes reference implementation, and batch-generates plans for selected features. Use when converting a p",
+    "triggers": "code forge port",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-port"
+  },
+  {
+    "name": "code-forge-review",
+    "description": "Use when reviewing code, handling review feedback, or posting a review to a GitHub PR \u2014 14-dimension quality analysis for features or entire projects (generate mode), structured evaluation and respons",
+    "triggers": "code forge review",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-review"
+  },
+  {
+    "name": "code-forge-status",
+    "description": "Display code-forge feature dashboard with task-level progress from state.json, or show detailed status for a specific feature. Use when checking progress, asking \"what's left\", viewing task completion",
+    "triggers": "code forge status",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-status"
+  },
+  {
+    "name": "code-forge-tdd",
+    "description": "Use when implementing any feature or fix outside code-forge workflow \u2014 enforces Red-Green-Refactor cycle with mandatory test-first discipline. Supports three modes: (1) Standalone \u2014 ad-hoc TDD for qui",
+    "triggers": "code forge tdd",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-tdd"
+  },
+  {
+    "name": "code-forge-verify",
+    "description": "Use before claiming work is done, fixed, or passing \u2014 requires running verification commands and confirming output before any success claim. Prevents false completion claims, unverified assertions, an",
+    "triggers": "code forge verify",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-verify"
+  },
+  {
+    "name": "code-forge-worktree",
+    "description": "Use when starting feature work that needs workspace isolation \u2014 creates git worktree with automatic project setup and baseline test verification. Ensures worktree directory is git-ignored and safe. In",
+    "triggers": "code forge worktree",
+    "category": "Dev Workflow",
+    "path": "${HOME}/.config/opencode/skill/code-forge-worktree"
+  },
+  {
+    "name": "continual-learning",
+    "description": "Guide for implementing continual learning in AI coding agents \u2014 hooks, memory scoping, reflection patterns. Use when setting up learning infrastructure for agents.",
+    "triggers": "continual learning",
+    "category": "Core/Tooling",
+    "path": "${HOME}/.config/opencode/skill/continual-learning"
+  },
+  {
+    "name": "copilot-sdk",
+    "description": "Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating programmatic integrations with Copilot across Node.js/TypeScript, Python, Go, or .NET. Covers session management, ",
+    "triggers": "copilot sdk",
+    "category": "Core/Tooling",
+    "path": "${HOME}/.config/opencode/skill/copilot-sdk"
+  },
+  {
+    "name": "entra-agent-id",
+    "description": "|",
+    "triggers": "entra agent id",
+    "category": "Core/Tooling",
+    "path": "${HOME}/.config/opencode/skill/entra-agent-id"
+  },
+  {
+    "name": "farmage-angular-architect",
+    "description": "Generates Angular 17+ standalone components, configures advanced routing with lazy loading and guards, implements NgRx state management, applies RxJS patterns, and optimizes bundle performance. Use wh",
+    "triggers": "Angular, Angular 17, standalone components, signals, RxJS, NgRx, Angular performance, Angular routing, Angular testing",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-angular-architect"
+  },
+  {
+    "name": "farmage-api-designer",
+    "description": "Use when designing REST or GraphQL APIs, creating OpenAPI specifications, or planning API architecture. Invoke for resource modeling, versioning strategies, pagination patterns, error handling standar",
+    "triggers": "API design, REST API, OpenAPI, API specification, API architecture, resource modeling, API versioning, GraphQL schema, API documentation",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-api-designer"
+  },
+  {
+    "name": "farmage-cli-developer",
+    "description": "Use when building CLI tools, implementing argument parsing, or adding interactive prompts. Invoke for parsing flags and subcommands, displaying progress bars and spinners, generating bash/zsh/fish com",
+    "triggers": "CLI, command-line, terminal app, argument parsing, shell completion, interactive prompt, progress bar, commander, click, typer, cobra",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-cli-developer"
+  },
+  {
+    "name": "farmage-code-documenter",
+    "description": "Generates, formats, and validates technical documentation \u2014 including docstrings, OpenAPI/Swagger specs, JSDoc annotations, doc portals, and user guides. Use when adding docstrings to functions or cla",
+    "triggers": "documentation, docstrings, OpenAPI, Swagger, JSDoc, comments, API docs, tutorials, user guides, doc site",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-code-documenter"
+  },
+  {
+    "name": "farmage-database-optimizer",
+    "description": "Optimizes database queries and improves performance across PostgreSQL and MySQL systems. Use when investigating slow queries, analyzing execution plans, or optimizing database performance. Invoke for ",
+    "triggers": "database optimization, slow query, query performance, database tuning, index optimization, execution plan, EXPLAIN ANALYZE, database performance, PostgreSQL optimization, MySQL optimization",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-database-optimizer"
+  },
+  {
+    "name": "farmage-debugging-wizard",
+    "description": "Parses error messages, traces execution flow through stack traces, correlates log entries to identify failure points, and applies systematic hypothesis-driven methodology to isolate and resolve bugs. ",
+    "triggers": "debug, error, bug, exception, traceback, stack trace, troubleshoot, not working, crash, fix issue",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-debugging-wizard"
+  },
+  {
+    "name": "farmage-devops-engineer",
+    "description": "Creates Dockerfiles, configures CI/CD pipelines, writes Kubernetes manifests, and generates Terraform/Pulumi infrastructure templates. Handles deployment automation, GitOps configuration, incident res",
+    "triggers": "DevOps, CI/CD, deployment, Docker, Kubernetes, Terraform, GitHub Actions, infrastructure, platform engineering, incident response, on-call, self-service",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-devops-engineer"
+  },
+  {
+    "name": "farmage-embedded-systems",
+    "description": "Use when developing firmware for microcontrollers, implementing RTOS applications, or optimizing power consumption. Invoke for STM32, ESP32, FreeRTOS, bare-metal, power optimization, real-time systems",
+    "triggers": "embedded systems, firmware, microcontroller, RTOS, FreeRTOS, STM32, ESP32, bare metal, interrupt, DMA, real-time",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-embedded-systems"
+  },
+  {
+    "name": "farmage-fastapi-expert",
+    "description": "Use when building high-performance async Python APIs with FastAPI and Pydantic V2. Invoke to create REST endpoints, define Pydantic models, implement authentication flows, set up async SQLAlchemy data",
+    "triggers": "FastAPI, Pydantic, async Python, Python API, REST API Python, SQLAlchemy async, JWT authentication, OpenAPI, Swagger Python",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-fastapi-expert"
+  },
+  {
+    "name": "farmage-fullstack-guardian",
+    "description": "Builds security-focused full-stack web applications by implementing integrated frontend and backend components with layered security at every level. Covers the complete stack from database to UI, enfo",
+    "triggers": "fullstack, implement feature, build feature, create API, frontend and backend, full stack, new feature, implement, microservices, websocket, real-time, deployment pipeline, monorepo, architecture decision, technology selection, end-to-end",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-fullstack-guardian"
+  },
+  {
+    "name": "farmage-golang-pro",
+    "description": "Implements concurrent Go patterns using goroutines and channels, designs and builds microservices with gRPC or REST, optimizes Go application performance with pprof, and enforces idiomatic Go with gen",
+    "triggers": "Go, Golang, goroutines, channels, gRPC, microservices Go, Go generics, concurrent programming, Go interfaces",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-golang-pro"
+  },
+  {
+    "name": "farmage-kotlin-specialist",
+    "description": "Provides idiomatic Kotlin implementation patterns including coroutine concurrency, Flow stream handling, multiplatform architecture, Compose UI construction, Ktor server setup, and type-safe DSL desig",
+    "triggers": "Kotlin, coroutines, Kotlin Multiplatform, KMP, Jetpack Compose, Ktor, Flow, Android Kotlin, suspend function",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-kotlin-specialist"
+  },
+  {
+    "name": "farmage-legacy-modernizer",
+    "description": "Designs incremental migration strategies, identifies service boundaries, produces dependency maps and migration roadmaps, and generates API facade designs for aging codebases. Use when modernizing leg",
+    "triggers": "legacy modernization, strangler fig, incremental migration, technical debt, legacy refactoring, system migration, legacy system, modernize codebase",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-legacy-modernizer"
+  },
+  {
+    "name": "farmage-microservices-architect",
+    "description": "Designs distributed system architectures, decomposes monoliths into bounded-context services, recommends communication patterns, and produces service boundary diagrams and resilience strategies. Use w",
+    "triggers": "microservices, service mesh, distributed systems, service boundaries, domain-driven design, event sourcing, CQRS, saga pattern, Kubernetes microservices, Istio, distributed tracing",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-microservices-architect"
+  },
+  {
+    "name": "farmage-monitoring-expert",
+    "description": "Configures monitoring systems, implements structured logging pipelines, creates Prometheus/Grafana dashboards, defines alerting rules, and instruments distributed tracing. Implements Prometheus/Grafan",
+    "triggers": "monitoring, observability, logging, metrics, tracing, alerting, Prometheus, Grafana, DataDog, APM, performance testing, load testing, profiling, capacity planning, bottleneck",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-monitoring-expert"
+  },
+  {
+    "name": "farmage-nextjs-developer",
+    "description": "Use when building Next.js 14+ applications with App Router, server components, or server actions. Invoke to configure route handlers, implement middleware, set up API routes, add streaming SSR, write ",
+    "triggers": "Next.js, Next.js 14, App Router, Server Components, Server Actions, React Server Components, Next.js deployment, Vercel, Next.js performance",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-nextjs-developer"
+  },
+  {
+    "name": "farmage-prompt-engineer",
+    "description": "Writes, refactors, and evaluates prompts for LLMs \u2014 generating optimized prompt templates, structured output schemas, evaluation rubrics, and test suites. Use when designing prompts for new LLM applic",
+    "triggers": "prompt engineering, prompt optimization, chain-of-thought, few-shot learning, prompt testing, LLM prompts, prompt evaluation, system prompts, structured outputs, prompt design",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-prompt-engineer"
+  },
+  {
+    "name": "farmage-rust-engineer",
+    "description": "Writes, reviews, and debugs idiomatic Rust code with memory safety and zero-cost abstractions. Implements ownership patterns, manages lifetimes, designs trait hierarchies, builds async applications wi",
+    "triggers": "Rust, Cargo, ownership, borrowing, lifetimes, async Rust, tokio, zero-cost abstractions, memory safety, systems programming",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-rust-engineer"
+  },
+  {
+    "name": "farmage-spark-engineer",
+    "description": "Use when writing Spark jobs, debugging performance issues, or configuring cluster settings for Apache Spark applications, distributed data processing pipelines, or big data workloads. Invoke to write ",
+    "triggers": "Apache Spark, PySpark, Spark SQL, distributed computing, big data, DataFrame API, RDD, Spark Streaming, structured streaming, data partitioning, Spark performance, cluster computing, data processing pipeline",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-spark-engineer"
+  },
+  {
+    "name": "farmage-spec-miner",
+    "description": "Reverse-engineering specialist that extracts specifications from existing codebases. Use when working with legacy or undocumented systems, inherited projects, or old codebases with no documentation. I",
+    "triggers": "reverse engineer, legacy code, code analysis, undocumented, understand codebase, existing system",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-spec-miner"
+  },
+  {
+    "name": "farmage-sre-engineer",
+    "description": "Defines service level objectives, creates error budget policies, designs incident response procedures, develops capacity models, and produces monitoring configurations and automation scripts for produ",
+    "triggers": "SRE, site reliability, SLO, SLI, error budget, incident management, chaos engineering, toil reduction, on-call, MTTR",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-sre-engineer"
+  },
+  {
+    "name": "farmage-swift-expert",
+    "description": "Builds iOS/macOS/watchOS/tvOS applications, implements SwiftUI views and state management, designs protocol-oriented architectures, handles async/await concurrency, implements actors for thread safety",
+    "triggers": "Swift, SwiftUI, iOS development, macOS development, async/await Swift, Combine, UIKit, Vapor",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-swift-expert"
+  },
+  {
+    "name": "farmage-typescript-pro",
+    "description": "Implements advanced TypeScript type systems, creates custom type guards, utility types, and branded types, and configures tRPC for end-to-end type safety. Use when building TypeScript applications req",
+    "triggers": "TypeScript, generics, type safety, conditional types, mapped types, tRPC, tsconfig, type guards, discriminated unions",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-typescript-pro"
+  },
+  {
+    "name": "farmage-vue-expert-js",
+    "description": "Creates Vue 3 components, builds vanilla JS composables, configures Vite projects, and sets up routing and state management using JavaScript only \u2014 no TypeScript. Generates JSDoc-typed code with @type",
+    "triggers": "Vue JavaScript, Vue without TypeScript, Vue JSDoc, Vue JS only, Vue vanilla JavaScript, .mjs Vue, Vue no TS",
+    "category": "Language/Domain Expert",
+    "path": "${HOME}/.config/opencode/skill/farmage-vue-expert-js"
+  },
+  {
+    "name": "frontend-design-review",
+    "description": "Review and create distinctive, production-grade frontend interfaces with high design quality and design system compliance. Evaluates using three pillars: frictionless insight-to-action, quality craft,",
+    "triggers": "frontend design review",
+    "category": "Core/Tooling",
+    "path": "${HOME}/.config/opencode/skill/frontend-design-review"
+  },
+  {
+    "name": "github-issue-creator",
+    "description": "Convert raw notes, error logs, voice dictation, or screenshots into crisp GitHub-flavored markdown issue reports. Use when the user pastes bug info, error messages, or informal descriptions and wants ",
+    "triggers": "github issue creator",
+    "category": "Core/Tooling",
+    "path": "${HOME}/.config/opencode/skill/github-issue-creator"
+  },
+  {
+    "name": "mcp-builder",
+    "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate externa",
+    "triggers": "mcp builder",
+    "category": "Core/Tooling",
+    "path": "${HOME}/.config/opencode/skill/mcp-builder"
+  },
+  {
+    "name": "microsoft-docs",
+    "description": "Understand Microsoft technologies by querying official documentation. Use whenever the user asks how something works, wants tutorials, needs configuration options, limits, quotas, or best practices fo",
+    "triggers": "microsoft docs",
+    "category": "Core/Tooling",
+    "path": "${HOME}/.config/opencode/skill/microsoft-docs"
+  },
+  {
+    "name": "podcast-generation",
+    "description": "Generate AI-powered podcast-style audio narratives using Azure OpenAI",
+    "triggers": "podcast generation",
+    "category": "Core/Tooling",
+    "path": "${HOME}/.config/opencode/skill/podcast-generation"
+  },
+  {
+    "name": "skill-creator",
+    "description": "Guide for creating effective skills for AI coding agents working with Azure SDKs and Microsoft Foundry services. Use when creating new skills or updating existing skills.",
+    "triggers": "skill creator",
+    "category": "Core/Tooling",
+    "path": "${HOME}/.config/opencode/skill/skill-creator"
+  },
+  {
+    "name": "spec-forge-analyze",
+    "description": "Analyze a collection of documents to build a knowledge map, identify themes, find gaps, duplicates, conflicts, and staleness, then produce an organized analysis with improvement recommendations. Desig",
+    "triggers": "spec forge analyze",
+    "category": "Spec Generation",
+    "path": "${HOME}/.config/opencode/skill/spec-forge-analyze"
+  },
+  {
+    "name": "spec-forge-audit",
+    "description": "Audit existing project documentation for quality, completeness, consistency, and code alignment. Scans docs against the actual codebase to find stale references, missing coverage, internal contradicti",
+    "triggers": "spec forge audit",
+    "category": "Spec Generation",
+    "path": "${HOME}/.config/opencode/skill/spec-forge-audit"
+  },
+  {
+    "name": "spec-forge-decompose",
+    "description": "Lightweight project decomposition skill. Analyzes project scope through a brief interview and determines whether the project should be treated as a single feature or split into multiple sub-features. ",
+    "triggers": "spec forge decompose",
+    "category": "Spec Generation",
+    "path": "${HOME}/.config/opencode/skill/spec-forge-decompose"
+  },
+  {
+    "name": "spec-forge-idea",
+    "description": "Use when exploring a new idea before writing formal specifications. Guides users through iterative discovery, research, and critical analysis to crystallize vague ideas into validated requirement draf",
+    "triggers": "spec forge idea",
+    "category": "Spec Generation",
+    "path": "${HOME}/.config/opencode/skill/spec-forge-idea"
+  },
+  {
+    "name": "spec-forge-prd-generation",
+    "description": "Generates professional Product Requirements Documents (PRDs) following industry-standard methodologies. This skill activates when the user asks to write PRD, create a product requirements document, dr",
+    "triggers": "spec forge prd generation",
+    "category": "Spec Generation",
+    "path": "${HOME}/.config/opencode/skill/spec-forge-prd-generation"
+  },
+  {
+    "name": "spec-forge-review",
+    "description": "Review spec-forge generated documents (tech-design + feature specs) for quality, completeness, and internal consistency. Finds issues like incomplete sections, contradictions, missing traceability, an",
+    "triggers": "spec forge review",
+    "category": "Spec Generation",
+    "path": "${HOME}/.config/opencode/skill/spec-forge-review"
+  },
+  {
+    "name": "spec-forge-srs-generation",
+    "description": "Generates professional Software Requirements Specification (SRS) documents based on IEEE 830, ISO/IEC/IEEE 29148, and Amazon technical specification standards. This skill activates when the user needs",
+    "triggers": "spec forge srs generation",
+    "category": "Spec Generation",
+    "path": "${HOME}/.config/opencode/skill/spec-forge-srs-generation"
+  },
+  {
+    "name": "spec-forge-tech-design-generation",
+    "description": "Generates professional Technical Design Documents following industry-standard engineering practices. This skill activates when the user asks to write a technical design, create an architecture design,",
+    "triggers": "spec forge tech design generation",
+    "category": "Spec Generation",
+    "path": "${HOME}/.config/opencode/skill/spec-forge-tech-design-generation"
+  },
+  {
+    "name": "spec-forge-test-cases-generation",
+    "description": "Generates structured test case sets with multi-dimensional coverage from project code analysis or specification documents. This skill activates when the user asks to write test cases, generate tests, ",
+    "triggers": "spec forge test cases generation",
+    "category": "Spec Generation",
+    "path": "${HOME}/.config/opencode/skill/spec-forge-test-cases-generation"
+  },
+  {
+    "name": "spec-forge-test-plan-generation",
+    "description": "Generates professional Test Plan and Test Cases documents following IEEE 829 test documentation standards, ISTQB testing methodologies, and Google Testing Blog best practices. This skill activates whe",
+    "triggers": "spec forge test plan generation",
+    "category": "Spec Generation",
+    "path": "${HOME}/.config/opencode/skill/spec-forge-test-plan-generation"
+  }
+]
