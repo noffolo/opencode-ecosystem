@@ -1,7 +1,0 @@
-{
-  "name": "opencode-lmstudio-guard",
-  "version": "1.0.0",
-  "description": "Auto-starts LM Studio server when OpenCode launches",
-  "main": "index.js",
-  "type": "module"
-}
