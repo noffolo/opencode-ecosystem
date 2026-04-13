@@ -1,0 +1,27 @@
+[submodule "OpenAgentsControl"]
+	path = OpenAgentsControl
+	url = https://github.com/noffolo/OpenAgentsControl.git
+[submodule "codemem"]
+	path = codemem
+	url = https://github.com/noffolo/codemem.git
+[submodule "oh-my-openagent"]
+	path = oh-my-openagent
+	url = https://github.com/noffolo/oh-my-openagent.git
+[submodule "opencode-skills"]
+	path = opencode-skills
+	url = https://github.com/noffolo/opencode-skills.git
+[submodule "opencode-workaholic"]
+	path = opencode-workaholic
+	url = https://github.com/noffolo/opencode-workaholic.git
+[submodule "skills-staging/antigravity-awesome"]
+	path = skills-staging/antigravity-awesome
+	url = https://github.com/noffolo/antigravity-awesome-skills.git
+[submodule "skills-staging/awesome-opencode"]
+	path = skills-staging/awesome-opencode
+	url = https://github.com/noffolo/awesome-opencode.git
+[submodule "skills-staging/openclaw-skills"]
+	path = skills-staging/openclaw-skills
+	url = https://github.com/noffolo/skills.git
+[submodule "skills-staging/volt-openclaw-skills"]
+	path = skills-staging/volt-openclaw-skills
+	url = https://github.com/noffolo/awesome-openclaw-skills.git
